@@ -1,19 +1,9 @@
 {
-	"name": "Codespaces Rust Starter",
-	"extensions": [
-		"cschleiden.vscode-github-actions",
-		"ms-vsliveshare.vsliveshare",
-		"matklad.rust-analyzer",
-		"serayuzgur.crates",
-		"vadimcn.vscode-lldb"
-	],
-	"dockerFile": "Dockerfile",
-	"settings": {
-		"editor.formatOnSave": true,
-		"terminal.integrated.shell.linux": "/usr/bin/zsh",
-		"files.exclude": {
-			"**/CODE_OF_CONDUCT.md": true,
-			"**/LICENSE": true
-		}
-	}
+	"name": "Codespaces Rust",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "version": "1.63"
+        }
+    }
 }
