@@ -5,5 +5,12 @@
         "ghcr.io/devcontainers/features/rust:1": {
             "version": "1.63"
         }
-    }
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot"
+			]
+		}
+	}
 }
